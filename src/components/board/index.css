@@ -1,0 +1,18 @@
+.board-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-wrapper .board-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.player-indicator.player--red {
+  color: red;
+}
+
+.player-indicator.player--blue {
+  color: blue;
+}

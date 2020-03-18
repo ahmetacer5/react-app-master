@@ -1,0 +1,18 @@
+.board-cell {
+  height: 40px;
+  width: 40px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+.board-cell.player--red {
+  background-color: red;
+}
+
+.board-cell.player--blue {
+  background-color: blue;
+}
+
+.board-cell:hover {
+  background-color: lightgray;
+}
