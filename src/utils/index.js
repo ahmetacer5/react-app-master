@@ -72,12 +72,12 @@ const checkDiagonalLeftToRight = (size, board) => {
 const checkDiagonalRightToLeft = (size, board) => {
     const {height, width} = size;
 
-    for (let y = height - 4; y >= 0; --y) {
-        for (let x = width - 4; x >= 0; --x) {
+    for (let y = 0; y < height - 3; ++y) {
+        for (let x = 3; x < width; ++x) {
             if (board[y][x].player) {
-                if (board[y][x].player === board[y + 1][x + 1].player &&
-                    board[y][x].player === board[y + 2][x + 2].player &&
-                    board[y][x].player === board[y + 3][x + 3].player) {
+                if (board[y][x].player === board[y + 1][x - 1].player &&
+                    board[y][x].player === board[y + 2][x - 2].player &&
+                    board[y][x].player === board[y + 3][x - 3].player) {
                     return board[y][x];
                 }
             }
